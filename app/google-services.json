@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "90917969982",
+    "project_id": "quoc-thach",
+    "storage_bucket": "quoc-thach.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:90917969982:android:c9bb1dfe0d619c968d316f",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQyiIvVRcjVTR9kYxsEI1tfeSZxIyi4h4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

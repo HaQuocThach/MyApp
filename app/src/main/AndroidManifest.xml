@@ -30,7 +30,6 @@
         </activity>
         <activity android:name=".LogoutActivity"
             android:exported="false">
-
         </activity>
     </application>
 

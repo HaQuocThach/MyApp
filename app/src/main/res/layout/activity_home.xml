@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/img_1"
+    tools:context=".HomeActivity">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="241dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="Public transport carbon"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- Bus  -->
+
+    <TextView
+        android:id="@+id/textBus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTitle"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="40dp"
+        android:text="Bus:"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editTextBus"
+        android:layout_width="90dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/textViewTitle"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="34dp"
+        android:layout_toEndOf="@id/textBus"
+        android:background="@color/white"
+        android:hint="0"
+        android:inputType="numberDecimal"
+        android:padding="8dp" />
+
+    <Spinner
+        android:id="@+id/spinnerBus"
+        android:layout_width="90dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/textViewTitle"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="34dp"
+        android:layout_toEndOf="@id/editTextBus"
+        android:background="@color/white"
+        android:hint="0"
+        android:inputType="numberDecimal"
+        android:padding="8dp" />
+
+
+    <!-- Coach  -->
+
+    <TextView
+        android:id="@+id/textCoach"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textBus"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="51dp"
+        android:text="Coach:"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editTextCoach"
+        android:layout_width="90dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/editTextBus"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="34dp"
+        android:layout_toEndOf="@id/textBus"
+        android:background="@color/white"
+        android:hint="0"
+        android:inputType="numberDecimal"
+        android:padding="8dp" />
+
+    <Spinner
+        android:id="@+id/spinnerCoach"
+        android:layout_width="90dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/spinnerBus"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="34dp"
+        android:layout_toEndOf="@id/editTextBus"
+        android:background="@color/white"
+        android:hint="0"
+        android:inputType="numberDecimal"
+        android:padding="8dp" />
+
+    <!-- National rail  -->
+
+    <TextView
+        android:id="@+id/textNational"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textCoach"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="51dp"
+        android:text="National rail:"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editTextNational"
+        android:layout_width="90dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/editTextCoach"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="34dp"
+        android:layout_toEndOf="@id/textCoach"
+        android:background="@color/white"
+        android:hint="0"
+        android:inputType="numberDecimal"
+        android:padding="8dp" />
+
+    <Spinner
+        android:id="@+id/spinnerNational"
+        android:layout_width="90dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/spinnerCoach"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="34dp"
+        android:layout_toEndOf="@id/editTextCoach"
+        android:background="@color/white"
+        android:hint="0"
+        android:inputType="numberDecimal"
+        android:padding="8dp" />
+
+    <!-- International rail:  -->
+
+    <TextView
+        android:id="@+id/textInternational"
+        android:layout_width="121dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textNational"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="51dp"
+        android:text="International rail:"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editTextInternational"
+        android:layout_width="90dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/editTextNational"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="32dp"
+        android:layout_toEndOf="@id/textNational"
+        android:background="@color/white"
+        android:hint="0"
+        android:inputType="numberDecimal"
+        android:padding="8dp" />
+
+    <Spinner
+        android:id="@+id/spinnerInternational"
+        android:layout_width="90dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/spinnerNational"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="34dp"
+        android:layout_toEndOf="@id/editTextNational"
+        android:background="@color/white"
+        android:hint="0"
+        android:inputType="numberDecimal"
+        android:padding="8dp" />
+
+
+    <!-- Tram:  -->
+
+    <TextView
+        android:id="@+id/textTram"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textInternational"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="51dp"
+        android:text="Tram:"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editTextTram"
+        android:layout_width="90dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/editTextInternational"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="34dp"
+        android:layout_toEndOf="@id/textInternational"
+        android:background="@color/white"
+        android:hint="0"
+        android:inputType="numberDecimal"
+        android:padding="8dp" />
+
+    <Spinner
+        android:id="@+id/spinnerTram"
+        android:layout_width="90dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/spinnerInternational"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="34dp"
+        android:layout_toEndOf="@id/editTextInternational"
+        android:background="@color/white"
+        android:hint="0"
+        android:inputType="numberDecimal"
+        android:padding="8dp" />
+
+    <!-- Tube / Subway:  -->
+
+    <TextView
+        android:id="@+id/textTuSub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textTram"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="57dp"
+        android:text="Tube / Subway:"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editTextTuSub"
+        android:layout_width="90dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/editTextTram"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="35dp"
+        android:layout_toEndOf="@id/textTram"
+        android:background="@color/white"
+        android:hint="0"
+        android:inputType="numberDecimal"
+        android:padding="8dp" />
+
+    <Spinner
+        android:id="@+id/spinnerTuSub"
+        android:layout_width="90dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/spinnerTram"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="34dp"
+        android:layout_toEndOf="@id/editTextTram"
+        android:background="@color/white"
+        android:hint="0"
+        android:inputType="numberDecimal"
+        android:padding="8dp" />
+    <!-- Taxi:  -->
+
+    <TextView
+        android:id="@+id/textTaxi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textTuSub"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="57dp"
+        android:text="Taxi:"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editTextTaxi"
+        android:layout_width="90dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/editTextTuSub"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="39dp"
+        android:layout_toEndOf="@id/textTuSub"
+        android:background="@color/white"
+        android:hint="0"
+        android:inputType="numberDecimal"
+        android:padding="8dp" />
+
+    <Spinner
+        android:id="@+id/spinnerTaxi"
+        android:layout_width="90dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/spinnerTuSub"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="34dp"
+        android:layout_toEndOf="@id/editTextTuSub"
+        android:background="@color/white"
+        android:hint="0"
+        android:inputType="numberDecimal"
+        android:padding="8dp" />
+
+    <Button
+        android:id="@+id/buttonCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextTaxi"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#009688"
+        android:text="Calculate" />
+</RelativeLayout>
